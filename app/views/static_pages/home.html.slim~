@@ -1,0 +1,5 @@
+title Ruby on Rails Tutorial Sample App | Home
+h1 Sample App
+p
+	p	Nice <a href= "http://railstutorial.org">tutorial</a>  
+	
