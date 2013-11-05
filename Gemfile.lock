@@ -62,7 +62,7 @@ GEM
       thor (>= 0.18.1)
     guard-rspec (1.2.1)
       guard (>= 1.1)
-    haml (4.0.3)
+    haml (4.0.4)
       tilt
     haml-rails (0.4)
       actionpack (>= 3.1, < 4.1)
