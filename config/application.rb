@@ -63,7 +63,13 @@ module SampleApp
     config.active_record.whitelist_attributes = true
 
     # Enable the asset pipeline
-    config.assets.enabled = false
+    config.assets.enabled = true
+    
+    #While precompiling assets, in Rails 3.x, you can prevent initializing your application and connecting to the database by ensuring that the following line is in your
+    config.assets.initialize_on_precompile = false
+
+
+    
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
