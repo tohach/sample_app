@@ -1,5 +1,7 @@
 require File.expand_path('../boot', __FILE__)
 
+require 'rails/all'
+
 # Pick the frameworks you want:
 require "active_record/railtie"
 require "action_controller/railtie"
@@ -65,11 +67,7 @@ module SampleApp
     # Enable the asset pipeline
     config.assets.enabled = true
     
-    #While precompiling assets, in Rails 3.x, you can prevent initializing your application and connecting to the database by ensuring that the following line is in your
-    config.assets.initialize_on_precompile = false
 
-
-    
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
