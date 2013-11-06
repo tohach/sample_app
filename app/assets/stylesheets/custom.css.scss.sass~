@@ -43,7 +43,11 @@ h1 {
 }
 
 h2 {
+<<<<<<< HEAD
   font-size: 1.2em;
+=======
+  font-size: 1.7em;
+>>>>>>> 8a6928d9da13d11ba1db452311a1c7ae5cc1a69d
   letter-spacing: -1px;
   margin-bottom: 30px;
   text-align: center;
@@ -100,4 +104,7 @@ footer {
     }
   }
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 8a6928d9da13d11ba1db452311a1c7ae5cc1a69d
