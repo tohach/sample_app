@@ -32,7 +32,7 @@ describe "Static pages" do
     it { should have_content('Contact') }
     it { should have_selector('title', text: full_title('Contact')) }
   end
-	
+	 
 	it "should have the right links on the layout" do
 	  visit root_path
 	  click_link "About"
@@ -43,8 +43,8 @@ describe "Static pages" do
 	  page.should have_selector 'title', text: full_title('Contact')
 	  click_link "Home"
 	  click_link "Sign up now!"
-	  click_link "sample"
-	  page.should have_selector 'title', text: full_title('')
+	  #click_link "sample"
+	  page.should have_selector 'title', text: full_title('Sign up')
 	
 	end 
 
