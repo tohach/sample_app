@@ -16,7 +16,7 @@ describe "StaticPages" do
  
 		it "should not have a custom page title" do
 			visit '/static_pages/home'
-			page.should_not have_selector('title', :text => '|Home') 
+			page.should_not have_selector('title', :text => '| Home') 
 		end
 	end
 
@@ -29,9 +29,9 @@ describe "StaticPages" do
       page.should have_selector('h1', :text=> 'Help')
     end
 
-		it "should have the title 'Home'" do
+		it "should have the title 'Help'" do
 			visit '/static_pages/help'
-			page.should have_selector('title', :text => "Ruby on Rails Tutorial Sample App")
+			page.should have_selector('title', :text =>  '| Help')
 		end
 	end
 end
@@ -41,24 +41,24 @@ end
 		
 		it "should have the h1 'About Us'" do
       visit '/static_pages/about'
-      page.should have_selector('h1', :text=> 'About Us')
+      page.should have_selector('h1', :text => 'About Us')
     end
 
    it "should have the content 'About Us'" do
       visit '/static_pages/about'
-      page.should have_selector('title', :text => "#{base_title} | About")
+      page.should have_selector('title', :text => '| About Us')
     end
   end
 
 
 	describe "Contact" do
 		it "should have the h1 'Contact'" do
-			visit '/static_pages/about'
+			visit '/static_pages/contact'
 			page.should have_selector('h1', :text => 'Contact')
 		end
 		
 		it "should have the content 'Contact'" do
 			visit '/static_pages/contact'
-			page.should have_selector('title', :text => "#{base_title} | Contact")
+			page.should have_selector('title', :text => '| Contact')
 		end
 end
