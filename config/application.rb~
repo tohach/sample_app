@@ -1,6 +1,15 @@
 require File.expand_path('../boot', __FILE__)
 
+<<<<<<< HEAD
 require "rails/all"
+=======
+# Pick the frameworks you want:
+require "active_record/railtie"
+require "action_controller/railtie"
+require "action_mailer/railtie"
+require "active_resource/railtie"
+require "sprockets/railtie"
+>>>>>>> 76224f80b867528705de40d8fd0b9cf34dae7fbd
 
 # require "rails/test_unit/railtie"
 
