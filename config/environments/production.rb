@@ -15,15 +15,13 @@ SampleApp::Application.configure do
   config.assets.compress = true
 
   # Don't fallback to assets pipeline if a precompiled asset is missed
-<<<<<<< HEAD
+
   config.assets.compile = true
 
-=======
   config.assets.compile = false
   config.assets.initialize_on_precompile = false
   
-  
->>>>>>> 76224f80b867528705de40d8fd0b9cf34dae7fbd
+ 
   # Generate digests for assets URLs
   config.assets.digest = true
 
