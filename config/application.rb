@@ -77,3 +77,5 @@ module SampleApp
     config.assets.version = '1.0'
   end
 end
+
+require "will_paginate"
