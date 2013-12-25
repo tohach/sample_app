@@ -28,11 +28,9 @@ class UsersController < ApplicationController
   end
   
   def edit
-    @user = User.find(params[:id])
   end
 
   def update
-    @user = User.find(params[:id])
     if @user.update_attributes(params[:user])
       #handle a succesful update.
       sign_in @user
@@ -46,7 +44,7 @@ class UsersController < ApplicationController
 
   def destroy
     user = User.find(params[:id])
-    User.find(params[:id]).destroy
+    User.find(param s[:id]).destroy
     flash[:success] = "User #{user.id} with name: #{user.name} and email: #{user.email} is destoryed"
     user.delete
     redirect_to users_path
