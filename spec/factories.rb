@@ -9,6 +9,12 @@ FactoryGirl.define do
       admin true
     end
   end
+
+
+  factory :micropost do
+    content "Text message"
+    user
+  end
 end
 
 
