@@ -20,7 +20,7 @@ describe Micropost do
   it {should be_valid}
 
   describe "accessible attributes" do
-    it "should not allow acces to user_id" do
+    it "should not allow access to user_id" do
       expect do
         User.new(user_id: "1")
       end.should raise_error(ActiveModel::MassAssignmentSecurity::Error)
